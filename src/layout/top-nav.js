@@ -11,11 +11,15 @@ import {
   Text,
 } from 'react-native';
 
+import { Header } from 'react-native-elements';
+
 const TopNav: () => React$Node = () => {
   return (
-    <>
-        <Text>Mama Mia! I'm a header!</Text>
-    </>
+    <Header
+      leftComponent={{ icon: 'menu', color: '#fff' }}
+      centerComponent={{ text: 'HomeRoom', style: { color: '#fff' } }}
+      rightComponent={{ icon: 'home', color: '#fff' }}
+    />
   );
 };
 
